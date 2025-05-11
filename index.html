@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Davo's touch - Book Your Cut</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section id="hero" class="parallax-hero" data-aos="fade-up">
+    <div class="hero-overlay">
+    <h1>Davo's Touch</h1>
+    <p>Fresh Cuts, No Wait.</p>
+    <a href="#booking" class="cta-button">Book an Appointment</a>
+    </div>
+    </section>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>Welcome to Davo’s Touch : where grooming meets nature, and every haircut is an experience, not just a service.
+
+        At Davo’s Touch, we specialize in modern grooming with an organic twist. Whether it’s a clean fade, classic trim, beard sculpting, or a complete transformation, our services are tailored to complement your individual style and facial structure. 
+
+        With flexible online booking, punctual appointments, and a clean, welcoming space, Davo’s Touch is redefining what it means to get groomed in today’s fast-paced world. 
+        
+        Come experience the signature touch  Davo’s Touch  and leave with more than a fresh cut. Leave with presence, pride, and peace of mind.
+        
+    </p>        
+    <div class="carousel">
+      <button class="carousel-btn prev">⟨</button>
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide"><img src='images/1.jpg' alt="Barbershop style 1"></li>
+          <li class="carousel-slide"><img src='images/2.jpg' alt="Barbershop style 2"></li>
+          <li class="carousel-slide"><img src='images/1.jpg' alt="Barbershop style 3"></li>
+        </ul>
+      </div>
+      <button class="carousel-btn next">⟩</button>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Haircut - #5,000 naira</li>
+      <li>Beard Trim - #3,000 naira</li>
+      <li>Haircut + Beard - #8,000 naira</li>
+      <li>Kids Cut - #4,000 naira</li>
+      <li>Home Service - #20,000 naira</li>
+    </ul>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" data-aos="fade-up">
+    <h2>Book an Appointment</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="service">Service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Select a Service--</option>
+        <option value="haircut">Haircut</option>
+        <option value="beard">Beard Trim</option>
+        <option value="combo">Haircut + Beard</option>
+        <option value="kids">Kids Cut</option>
+        <option value="Home service">Home service</option>
+      </select>
+
+      <label for="date">Choose Date & Time:</label>
+      <input type="datetime-local" id="date" name="datetime" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <div id="confirmationMessage" style="display:none; margin-top: 1rem; color: green; font-weight: bold;">
+        ✅ Appointment confirmed! See you soon.
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact & Location</h2>
+    <p>📍 123 Fade St, Trim City</p>
+    <p>📞 +1 (555) 123-4567</p>
+    <p>📧 bookings@Davostouch.com</p>
+    <div id="map">
+      <!-- Google Maps Embed -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.416280019299!2d5.137174609657351!3d7.307041992670338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047894972021f41%3A0xd84c4e01abf1d646!2sFederal%20University%20of%20Technology%20Akure!5e0!3m2!1sen!2sng!4v1746977005130!5m2!1sen!2sng" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <section class="testimonials" id="testimonials" data-aos="fade-up">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+      
+      <div class="testimonial">
+        <img src='images/5.png' alt="Jamal O. photo" class="testimonial-img">
+        <p>“Best barbershop in town, hands down. Davo pays attention to every detail — I always leave feeling sharp and confident.”</p>
+        <h4>– Jamal O., Creative Director</h4>
+      </div>
+  
+      <div class="testimonial">
+        <img src='images/6.png' alt="Tobi F. photo" class="testimonial-img">
+        <p>“The vibe, the professionalism, the cuts — all on point. You can really feel the care and calm in the environment.”</p>
+        <h4>– Tobi F., UX Designer</h4>
+      </div>
+  
+      <div class="testimonial">
+        <img src='images/7.png' alt="Chris M. photo" class="testimonial-img">
+        <p>“I've tried other barbershops, but nothing compares to Davo’s Touch. It’s more than grooming — it’s therapy with a fade.”</p>
+        <h4>– Chris M., Entrepreneur</h4>
+      </div>
+  
+    </div>
+  </section>
+  
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-flex">
+    <p>&copy; 2025 Davo's Touch. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://facebook.com/davostouch" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/davostouch" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/davostouch" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://tiktok.com/@davostouch" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="mailto:hello@davostouch.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>
