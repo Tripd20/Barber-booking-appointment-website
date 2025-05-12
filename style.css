@@ -26,7 +26,7 @@
   
   /* Hero Section */
   .parallax-hero {
-    background-image: url('images/clipper.jpg'); /* Replace with your image path */
+    background-image: url('clipper.jpg'); /* Replace with your image path */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
